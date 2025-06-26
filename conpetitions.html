@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>競技内容 - キッズイベント 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ナビゲーションヘッダー -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- ロゴ -->
+            <div class="nav-logo">
+                <span class="logo-icon">⭐</span>
+                <span class="logo-text">キッズイベント</span>
+            </div>
+
+            <!-- デスクトップナビゲーション -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <span class="nav-icon">⭐</span>
+                    ホーム
+                </a>
+                <a href="competitions.html" class="nav-link active">
+                    <span class="nav-icon">🏆</span>
+                    競技内容
+                </a>
+            </nav>
+
+            <!-- 参加申込ボタン -->
+            <button class="cta-button">参加申込</button>
+
+            <!-- モバイルハンバーガーメニュー -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- モバイルメニュー -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-link">
+                <span class="nav-icon">⭐</span>
+                ホーム
+            </a>
+            <a href="competitions.html" class="mobile-link active">
+                <span class="nav-icon">🏆</span>
+                競技内容
+            </a>
+            <button class="mobile-cta-button">参加申込</button>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">🏆 競技内容 🏆</h1>
+            <p class="page-description">
+                楽しい競技がいっぱい！お子様の年齢に合わせて参加できます。
+            </p>
+        </div>
+
+        <!-- 競技一覧 -->
+        <section class="competitions-section">
+            <div class="container">
+                <div class="competitions-grid">
+                    <!-- かけっこ競争 -->
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-emoji">🏃‍♂️</span>
+                            <h3 class="competition-title">かけっこ競争</h3>
+                        </div>
+                        <p class="competition-description">
+                            年齢別のかけっこ競争です。みんなで楽しく走りましょう！
+                        </p>
+                        <div class="competition-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">👶</span>
+                                <span class="detail-text">対象年齢: 3-12歳</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⏰</span>
+                                <span class="detail-text">時間: 10:00-11:00</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">場所: メイングラウンド</span>
+                            </div>
+                        </div>
+                        <button class="competition-button">この競技に参加する</button>
+                    </div>
+
+                    <!-- 玉入れ大会 -->
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-emoji">🏀</span>
+                            <h3 class="competition-title">玉入れ大会</h3>
+                        </div>
+                        <p class="competition-description">
+                            チーム戦で玉入れを行います。協力して頑張ろう！
+                        </p>
+                        <div class="competition-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">👶</span>
+                                <span class="detail-text">対象年齢: 5-12歳</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⏰</span>
+                                <span class="detail-text">時間: 11:30-12:30</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">場所: 体育館</span>
+                            </div>
+                        </div>
+                        <button class="competition-button">この競技に参加する</button>
+                    </div>
+
+                    <!-- 綱引き大会 -->
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-emoji">🪢</span>
+                            <h3 class="competition-title">綱引き大会</h3>
+                        </div>
+                        <p class="competition-description">
+                            力を合わせて綱を引こう！チームワークが大切です。
+                        </p>
+                        <div class="competition-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">👶</span>
+                                <span class="detail-text">対象年齢: 6-12歳</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⏰</span>
+                                <span class="detail-text">時間: 13:30-14:30</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">場所: メイングラウンド</span>
+                            </div>
+                        </div>
+                        <button class="competition-button">この競技に参加する</button>
+                    </div>
+
+                    <!-- 障害物競走 -->
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-emoji">🏃‍♀️</span>
+                            <h3 class="competition-title">障害物競走</h3>
+                        </div>
+                        <p class="competition-description">
+                            様々な障害物をクリアしてゴールを目指そう！
+                        </p>
+                        <div class="competition-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">👶</span>
+                                <span class="detail-text">対象年齢: 4-12歳</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⏰</span>
+                                <span class="detail-text">時間: 15:00-16:00</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">場所: アスレチックコース</span>
+                            </div>
+                        </div>
+                        <button class="competition-button">この競技に参加する</button>
+                    </div>
+                </div>
+
+                <!-- 参加賞セクション -->
+                <div class="prize-section">
+                    <div class="prize-card">
+                        <div class="prize-icon">🏆</div>
+                        <h3 class="prize-title">参加賞について</h3>
+                        <p class="prize-description">
+                            すべての競技に参加したお子様には、素敵な参加賞をプレゼント！<br>
+                            頑張った分だけ、きっと素晴らしい思い出になります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            
+            mobileMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // モバイルメニューのリンクをクリックしたときにメニューを閉じる
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
